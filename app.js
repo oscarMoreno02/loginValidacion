@@ -8,11 +8,11 @@ const pasw = '123456789'
 function Validar() {
 
     var user = document.getElementById('email').value
-   var password = document.getElementById('password').value
+    var password = document.getElementById('password').value
 
     if (ValidarEspacios(user, password)) {
         if (user == admin && pasw == password) {
-            var w = window.location.href='./index.html'
+            var w = window.location.href = './index.html'
         } else { alert('Usuario incorrecto') }
     }
 }
@@ -32,7 +32,7 @@ function ValidarEspacios(u, p) {
             emailSeparado[0] == '@' ||
             emailSeparado[emailSeparado.length - 1] == '@' ||
             emailSeparado[emailSeparado.length - 2] == '@' ||
-            emailSeparado[emailSeparado.length - 3] == '@' 
+            emailSeparado[emailSeparado.length - 3] == '@'
         ) {
             mensaje = mensaje + `El caracter "@" debe estar introducido correctamente. \n`
             v = false
@@ -45,7 +45,7 @@ function ValidarEspacios(u, p) {
             }
             if (cantidad == 0 || cantidad > 1) {
                 mensaje = mensaje + ` El email debe introducirse con un formato correcto. \n`
-                var v=false
+                var v = false
             }
         }
 
