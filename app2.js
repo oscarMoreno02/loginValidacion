@@ -60,8 +60,8 @@ function Resetear() {
 
 function ValidarFecha(f) {
     var c = true
-    var fParida = f.split('')
-    if (f[2] != '/' || f[5] != '/' || f.length > 10) {
+    var fPartida = f.split('')
+    if (fPartida[2] != '/' || fPartida[5] != '/' || fPartida.length > 10) {
         c = false
     }
     return c
